@@ -1,5 +1,5 @@
 # EDOS-utils
-A set of simple utility commands and batch files for the Elf-DOS operating system. These commands were assembled into 1802 binary files using the [Asm/02 1802 Assembler](https://github.com/fourstix/Asm-02) and the [Link/02 1802 Linker](https://github.com/fourstix/Link-02).
+A set of simple utility commands and batch files for the Elf-DOS operating system. These commands were assembled into 1802 binary files using the [Asm/02 1802 Assembler](https://github.com/fourstix/Asm-02) and the [Link/02 1802 Linker](https://github.com/fourstix/Link-02). Those commands with C source files were compiled using the [ELFC C compiler](https://github.com/fourstix/ELFC).
 
 Platform
 --------
@@ -65,6 +65,11 @@ Reset Q.  This command turns the Q bit off. (Q = 0)
 ## seq
 **Usage:** seq<br/>
 Set Q.  This command turns the Q bit on. (Q = 1)
+
+## tree
+**Usage:** tree [-d|-h] [directory, default = current]
+List the contents of a directory and its sub-directories in a branching format. If no directory is specified then the current directory will be listed.  The option -d will list only directories, and the option -h will include hidden files and directories in the listing.
+
 
 Elf-DOS Batch Files
 --------------------------
@@ -170,6 +175,7 @@ Repository Contents
 
 * **/src/**  -- Source files for Elf-DOS utilities.
   * build.bat - Windows batch file to assemble source file with Asm/02 to create binary file. Use the command *build xxx* to assemble the xxx.asm file into a binary file.
+  * compile.bat - Windows batch file to compile source file with ElfC into a binary file. Use the command *compile xxx* to compile the xxx.C source file into a binary file *xxx*.
 * **/src/include/**  -- Include files for Elf/OS file utilities.
   * opcodes.def - Opcode definitions for Asm/02.
   * bios.inc - Bios definitions from Elf-DOS.
@@ -179,7 +185,7 @@ Repository Contents
 * **/bin/**  -- Binary files for Elf-DOS utilities.
 * **/bin/kilo/**
   * kilo -- Binary file for kilo text editor
-* **/bin/stdEDOS/**
+* **/bin/stgEDOS/**
   * stg_edos.hex -- Hex file for STG EDOS ROM.
 * **/bin/pixie/**  -- Binary files for Elf-DOS Pixie Video demos.
 * **/bat/**  -- Batch utility files for Elf-DOS.
