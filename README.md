@@ -34,7 +34,7 @@ The month name can be abbreviated to any unique month name prefix. `ja` will get
 Two digit year numbers between 01 and 99 are interpreted as 2001 to 2099.
 
 ## find
-**Usage:** find [-i|-p|-h] *name* [directory, default = current]
+**Usage:** find [-i|-p|-h] *name* [directory, default = current]<br/>
 Search a directory and its sub-directories for file names matching *name*.  If no directory is specified then the current directory will be searched.  The option -i will ignore case when matching file names, the option -p, will match *name* as prefix beginning file names and the option -h, will include hidden files and directories in the search.
 
 ## halt
@@ -71,7 +71,7 @@ Reset Q.  This command turns the Q bit off. (Q = 0)
 Set Q.  This command turns the Q bit on. (Q = 1)
 
 ## tree
-**Usage:** tree [-d|-h] [directory, default = current]
+**Usage:** tree [-d|-h] [directory, default = current]<br/>
 List the contents of a directory and its sub-directories in a branching format. If no directory is specified then the current directory will be listed.  The option -d will list only directories, and the option -h will include hidden files and directories in the listing.
 
 
@@ -82,7 +82,7 @@ Elf-DOS Batch Files
 Show information about the disk contained in the file */cfg/about.nfo*
 
 ## help
-**Usage:** help *cmd*
+**Usage:** help *cmd*<br/>
 Show information about the command *cmd* contained in the file */hlp/cmd.txt*. Type `help` alone for more information.
 
 Elf-DOS Help Text Files
@@ -93,7 +93,7 @@ These are text files used by the `help` batch file.  The should all be copied to
 Elf-DOS Kilo Editor
 --------------------
 ## kilo
-**Usage:** kilo *filename*
+**Usage:** kilo *filename*<br/>
 
 Kilo is a full screen editor for the Elf-DOS. The [Elf/OS kilo](https://github.com/fourstix/Elfos-kilo) editor was written in 1802 Assembly language by Gaston Williams and based loosely on the Kilo editor by Salvatore Sanfilippo aka antirez and the Elfos-Edit editor by Mike Riley.
 
@@ -157,20 +157,20 @@ STG + Elf-DOS Kernel ROM Memory Map
 ------------------------------------------
 
 ## spaceship
-**Usage:** spaceship *(Press Input /EF4 to exit program.)*
+**Usage:** spaceship *(Press Input /EF4 to exit program.)*<br/>
 Joseph A Weisbecker's Pixie Graphic Demo program modified to
 run under Elf-DOS.
 
 ## dma_test
-**Usage:** dma_test *(Press Input /EF4 to exit program.)*
+**Usage:** dma_test *(Press Input /EF4 to exit program.)*<br/>
 Tom Pittman's Video DMA program modified to run under Elf-DOS.
 
 ## tvclock
-**Usage:** tvclock *(Press Input /EF4 to exit program.)*
+**Usage:** tvclock *(Press Input /EF4 to exit program.)*<br/>
 Tom Pittman's TV Clock program modified to run under Elf-DOS.
 
 ## voff
-**Usage:** voff
+**Usage:** voff<br/>
 Turn Pixie Video Off. Output Port 1 twice and Disable interrupts. This command is useful when debugging or writing pixie video programs to turn off a 1861 video display.
 
 
@@ -218,6 +218,9 @@ Copyright (c) 2004-2026 by Mike Riley
 
 Link/02 1802 Linker<br/>
 Copyright (c) 2004-2026 by Mike Riley
+
+ELFC 1802 C Compiler<br/>
+Copyright (c) 2026 by Gaston Williams
 
 The Pico/Elf Microcomputer Hardware<br/>
 Copyright (c) 2020-2026 by Mike Riley
