@@ -17,8 +17,6 @@
 #include <stdio.h>
 #include <dirent.h>
 
-#define DE_ISHIDDEN(e)   ((e)->d_attr & _A_HIDDEN)
-
 typedef struct counter {
   size_t dirs;
   size_t files;
